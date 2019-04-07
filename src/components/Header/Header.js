@@ -1,9 +1,11 @@
 import React from 'react'
 
 export default function Header() {
+  const date = new Date()
   return (
     <header>
-      Header
+      <h1>{(date.getMonth() < 5) ? date.getFullYear() : date.getFullYear() + 1} Piano Festival</h1>
+      <h2>Weber State University</h2>
     </header>
   )
 }
