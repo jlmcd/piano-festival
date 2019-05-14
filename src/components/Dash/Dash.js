@@ -1,11 +1,11 @@
-import React, {Component} from 'react'
+import React from 'react'
 
-export default class Dash extends Component {
-  render() {
-    return (
-      <div>
-        Organizer Dashboard
-      </div>
-    )
-  }
+const Dash = () => {
+  return (
+    <div>
+      Organizer Dashboard
+    </div>
+  )
 }
+
+export default Dash

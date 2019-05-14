@@ -1,10 +1,12 @@
 header {
-  background-color: $mainGray;
+  // background-color: $mainGray;
   padding: 2rem;
-  color: $white;
+  color: $mainGray;
+  font-family: $mainFont;
   h1 {
     font-size: 2rem;
     margin-bottom: .4rem;
+    font-weight: bold;
   }
   h2 {
     font-size: 1.4rem;

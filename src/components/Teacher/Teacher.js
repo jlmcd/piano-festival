@@ -1,11 +1,11 @@
-import React, {Component} from 'react'
+import React from 'react'
 
-export default class Teacher extends Component {
-  render() {
-    return (
-      <div>
-        Teacher Dashboard
-      </div>
-    )
-  }
+const Teacher = () => {
+  return (
+    <div>
+      Teacher Dashboard
+    </div>
+  )
 }
+
+export default Teacher

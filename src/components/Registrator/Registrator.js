@@ -1,11 +1,11 @@
-import React, {Component} from 'react'
+import React from 'react'
 
-export default class Registrator extends Component {
-  render() {
-    return(
-      <div>
-        Registrator Form
-      </div>
-    )
-  }
+const Registrator = () => {
+  return(
+    <div>
+      Registrator Form
+    </div>
+  )
 }
+
+export default Registrator

@@ -1,0 +1,42 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  input {
+    font-size: .8rem;
+    margin: .2rem;
+    transition: .2s;
+    &:focus {
+      -moz-outline-radius: 5px;
+      outline-style: solid;
+      outline-width: 4px;
+      outline-color: $compPurple3;
+    }
+  }
+  button {
+    border: none;
+    border: 1px solid $mainGray;
+    margin: .3rem;
+    background: white;
+    cursor: pointer;
+    &:hover {
+      background: $compPurple2;
+      color: $white;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      color: $mainPurple;
+    }
+  }
+  h5 {
+    font-size: .9rem;
+    font-family: $mainFont;
+    line-height: 1rem;
+    cursor: pointer;
+    &:hover {
+      color: $compPurple2;
+    }
+  }
+}

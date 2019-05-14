@@ -46,7 +46,7 @@ box-sizing: border-box
 }
 /* ---------------------------------------------- */
 // FONTS:
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700');
 
 // VARIABLES:
 @import 'sassVars';
@@ -58,8 +58,21 @@ box-sizing: border-box
 @import './components/Landing/Landing';
 @import './components/Registrator/Registrator';
 @import './components/Teacher/Teacher';
+@import './components/Landing/Login/Login';
 
 // GLOBAL STYLES:
+body {
+  background: $white;
+  color: $mainGray;
+}
+::-moz-selection {
+  background: $compPurple1;
+  color: $white;
+}
+::selection {
+  background: $compPurple1;
+  color: $white;
+}
 .App {
   text-align: center;
 }

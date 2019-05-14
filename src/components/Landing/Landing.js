@@ -1,13 +1,13 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Login from './Login/Login'
 
-export default class Landing extends Component {
-  render() {
-    return (
-      <div>
-        Landing Page
-        <Login/>
-      </div>
-    )
-  }
+const Landing = () => {
+  return (
+    <div className="landing">
+      <h2>Login To Register</h2>
+      <Login />
+    </div>
+  )
 }
+
+export default Landing
