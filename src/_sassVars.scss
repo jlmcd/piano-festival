@@ -13,3 +13,35 @@ $white: #efefef;
 
 // FONTS
 $mainFont: 'Arimo', sans-serif;
+
+// WIDTHS
+$phone-width: 420px;
+
+// MEDIA QUERIES
+@mixin phone {
+  @media (max-width: #{$phone-width}) {
+    @content;
+  }
+};
+
+// PLACEHOLDER CLASSES
+%input {
+  font-size: 0.8rem;
+  margin: 0.3rem;
+  transition: 0.2s;
+  width: 170px;
+  border-color: $mainGray;
+  border-width: 1px;
+  padding: .2rem;
+  &:focus {
+    -moz-outline-radius: 5px;
+    outline-style: solid;
+    outline-width: 4px;
+    outline-color: $compPurple3;
+  }
+  @include phone {
+    width: 50%;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}

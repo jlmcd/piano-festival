@@ -59,6 +59,7 @@ box-sizing: border-box
 @import './components/Registrator/Registrator';
 @import './components/Teacher/Teacher';
 @import './components/Landing/Login/Login';
+@import './components/Landing/AccountRegister/AccountRegister';
 
 // GLOBAL STYLES:
 body {
@@ -75,4 +76,26 @@ body {
 }
 .App {
   text-align: center;
+}
+
+.hundo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+  height: 20vh;
+  height: calc(var(--vh, 1vh) * 20);
+  &:nth-of-type(2n) {
+    background: red;
+  }
+}
+.navbar {
+  display: flex;
+  background: green;
+  min-width: 100vw;
+  height: 56px;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0px;
 }

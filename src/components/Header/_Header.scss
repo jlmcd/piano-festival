@@ -3,12 +3,16 @@ header {
   padding: 2rem;
   color: $mainGray;
   font-family: $mainFont;
+  margin-top: 15vh;
   h1 {
     font-size: 2rem;
-    margin-bottom: .4rem;
+    margin-bottom: 0.4rem;
     font-weight: bold;
   }
   h2 {
     font-size: 1.4rem;
+  }
+  @media (max-height: 420px) {
+    margin-top: 0;
   }
 }
