@@ -1,12 +1,28 @@
 .account-register {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   input {
     @extend %input;
+    &:nth-last-of-type(1) {
+      background: white;
+    }
   }
   select {
     @extend %input;
     background: white;
+    cursor: pointer;
+  }
+  input[type='submit'] {
+    background: $white;
+    cursor: pointer;
+    &:hover {
+      background: $compPurple2;
+      color: $white;
+    }
+    @include appearance-fix;
   }
 }

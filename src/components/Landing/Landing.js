@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import Login from './Login/Login'
 import AccountRegister from './AccountRegister/AccountRegister'
-import { forgotPass } from '../../utils'
+import { forgotPass } from '../../utils/authUtils'
 
 const Landing = () => {
-  const [showRegister, setShowRegister] = useState(true)
+  const [showRegister, setShowRegister] = useState(false)
   return (
     <div className="landing">
       {showRegister ? (

@@ -9,7 +9,7 @@ $compGray: #aa989c;
 
 $secondary: #25cad3;
 
-$white: #efefef;
+$white: #faf6ea;
 
 // FONTS
 $mainFont: 'Arimo', sans-serif;
@@ -22,17 +22,25 @@ $phone-width: 420px;
   @media (max-width: #{$phone-width}) {
     @content;
   }
-};
+}
+
+// OTHER MIXINS
+@mixin appearance-fix {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
 // PLACEHOLDER CLASSES
 %input {
+  border: none;
   font-size: 0.8rem;
   margin: 0.3rem;
   transition: 0.2s;
   width: 170px;
-  border-color: $mainGray;
-  border-width: 1px;
-  padding: .2rem;
+  border: 1px solid $mainGray;
+  // border-width: 1px;
+  padding: 0.2rem;
   &:focus {
     -moz-outline-radius: 5px;
     outline-style: solid;

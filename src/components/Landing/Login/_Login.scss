@@ -1,12 +1,15 @@
 .login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  input {
-    @extend %input;
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > input {
+      @extend %input;
+    }
   }
   div {
-    button {
+    input {
       border: none;
       border: 1px solid $mainGray;
       margin: 0.3rem;
@@ -30,6 +33,11 @@
         font-size: 1rem;
         line-height: 1.6rem;
       }
+      @include appearance-fix
+    }
+    button {
+      @extend input;
+      border: 1px dotted $compGray;
     }
     @include phone {
       display: flex;
