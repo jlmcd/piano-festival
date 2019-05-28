@@ -1,7 +1,10 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 const Header = () => {
   const date = new Date()
+  useEffect(() => (
+    document.title = `${date.getMonth() < 5 ? date.getFullYear() : date.getFullYear() + 1} Piano Festival`
+  ))
   return (
     <header>
       <h1>
